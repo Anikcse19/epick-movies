@@ -11,8 +11,6 @@ import MobileMenuTheme3 from "../components/menus/MobileMenuTheme3";
 import { themeValue } from "../config/config";
 
 const Main = () => {
-
-
   // Define theme-based components
   const navbars = {
     theme1: (
@@ -50,7 +48,8 @@ const Main = () => {
   const containerWidth = {
     theme1: "lg:w-[78vw] lg:min-w-[1500px]",
     theme2: "lg:w-[1200px]",
-    theme3: "lg:w-[1200px] flex flex-col lg:flex-row gap-y-5 bg-black bg-opacity-[10%]",
+    theme3:
+      "lg:w-[1200px] flex flex-col lg:flex-row gap-y-5 bg-black bg-opacity-[10%]",
     default: "lg:w-[61vw] lg:min-w-[1170px]",
   };
 
@@ -59,7 +58,11 @@ const Main = () => {
       <div>
         {navbars[themeValue] || navbars.default}
 
-        <div className={`w-full ${ containerWidth[themeValue] || containerWidth.default} mx-auto overflow-hidden`}>
+        <div
+          className={`w-full ${
+            containerWidth[themeValue] || containerWidth.default
+          } mx-auto overflow-hidden`}
+        >
           <Outlet />
 
           {themeValue === "theme3" && (
