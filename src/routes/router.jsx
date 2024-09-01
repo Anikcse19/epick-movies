@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../layout/Main";
-import clientRoutes from "./ClientRoutes.jsx";
+import clientRoutes from "./clientRoutes.jsx";
 import NotFound from "../pages/not-found/NotFound.jsx";
 import AdminLoginRedirect from "../components/admin-redirect/AdminLoginRedirect.jsx";
 import HomeRoutes from "../components/SitemapGenerator/HomeRoutes.jsx";
